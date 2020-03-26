@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(137, 247, 137, 0.973);
+    color: black;
+    text-align: center;
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: Courier, monospace;
+  }
+
+body:after {
+    animation: grain 8s steps(10) infinite;
+    background-image: url(../img/background.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.44;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+  }
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+
+footer{
+    font-size: 15px;
+    text-align: end;
+    margin-top: 365px;
+  }
+
+#data{
+  text-align: right;
+  margin-right: 250px;
+  font-size: 20px;
+}
